@@ -2,13 +2,13 @@ import express from "express";
 import uniqid from "uniqid";
 import bodyParser from "body-parser";
 // import res from "express/lib/response";
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 
-// dotenv.config()
+dotenv.config()
  
 
 const app = express();
-const port = 9500;
+const port = process.env.PORT;
 app.use(bodyParser.json());
 
 
